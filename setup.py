@@ -1,7 +1,9 @@
 import sys
 from cx_Freeze import setup, Executable
 import os
-
+import os
+os.environ['TCL_LIBRARY']="C:\\Program Files\\Python36\\tcl\\tcl8.6"
+os.environ['TK_LIBRARY']="C:\\Program Files\\Python36\\tcl\\tk8.6"
 # Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {"packages": ["os", "pygame"]}
 
